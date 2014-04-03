@@ -1,0 +1,3 @@
+<nav role="navigation">
+  <%- @partial("menu.html.eco", { menuItems: @generateMenu(@document.url) }) %>
+</nav>

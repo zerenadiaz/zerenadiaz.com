@@ -1,13 +1,13 @@
-# yourproject.is
+# zerenadiaz.com
 
-website for [yourproject](http://yourproject.is) built using [DocPad](http://docpad.org).
+website for [zerena](http://zerenadiaz.com) built using [DocPad](http://docpad.org).
 
 ## how to
 
 ### install
 
 ```
-git clone https://github.com/yourname/yourproject.is
+git clone https://github.com/zerenadiaz/zerenadiaz.com
 npm install
 ```
 

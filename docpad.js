@@ -5,8 +5,10 @@ require('longjohn');
 module.exports = {
   templateData: {
     site: {
-      title: "yourproject is",
-      description: "a really awesome idea!",
+      styles: ["/styles/index.css"],
+      scripts: ["/scripts/bundle.js"],
+      title: "zerena",
+      description: "a really awesome artist!",
     },
   },
   detectEncoding: true,
@@ -26,16 +28,19 @@ module.exports = {
       outFile: "/scripts/bundle.js",
     },
     raw: {
-      'font-awesome': {
-        command: ['rsync', '-r', 'node_modules/font-awesome/fonts/', 'out/fonts'],
-      },
       semantic: {
         command: ['rsync', '-r', 'node_modules/semantic/src/fonts/', 'out/fonts'],
       },
     },
     ghpages: {
-      deployRemote: 'origin',
-      deployBranch: 'gh-pages',
+      deployRemote: 'deploy',
+      deployBranch: 'master',
+    },
+    menu: {
+      menuOptions: {
+        optimize: false,
+        skipFiles: /^(scripts|styles)/,
+      },
     },
   },
   environments: {

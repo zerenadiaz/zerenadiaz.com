@@ -1,0 +1,16 @@
+<% renderMenu = (items) => %>
+<ul class="ui large menu">
+  <% for item in items: %>
+  <a href="<%= item.url %>">
+    <li class="<% if item.state: %>active <% end %><%= item.meta.color %> item">
+      <i class="<%= item.meta.icon %> icon"></i>
+      <%= item.title %>
+      <% if item.children: %>
+        <%- renderMenu(item.children) %>
+      <% end %>
+    </li>
+  </a>
+  <% end %>
+</ul>
+<% end %>
+<%= renderMenu @menuItems %>

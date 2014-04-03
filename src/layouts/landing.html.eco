@@ -8,8 +8,6 @@
     <%- @getBlock("styles").add(@site.styles or []).add(@document.styles or []).toHTML() %>
   </head>
   <body>
-    <%- @partial("header.html.hb") %>
     <%- @content %>
-    <%- @getBlock("scripts").add(@site.scripts or []).add(@document.scripts or []).toHTML() %>
   </body>
 </html>
