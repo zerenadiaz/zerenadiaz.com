@@ -17,7 +17,8 @@
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.1",
     "longjohn": "~0.2.2",
     "clone": "~0.1.11",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "binarysearch": "^0.2.4"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {

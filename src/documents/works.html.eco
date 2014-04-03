@@ -1,28 +1,14 @@
 ---
 layout: "default"
 title: "works"
-menuOrder: 1
+menuOrder: 0
 ---
 <main class="works">
-  <% images = JSON.parse(@feedr.feeds.flickr).photoset.photo %>
   
   <div class="row">
     <div class="item column">
 
-    <% _ = require('lodash') %>
-    <% median = require('median') %> 
-    <% heightLookup = {} %> %>
-    <% heights = [] %>
-    <% totalHeight = _.reduce(images, (totalHeight, image) -> %>
-    <%  heights.push(totalHeight) %>
-    <%  heightLookup[totalHeight] = image %>
-    <%  totalHeight += image.height_z %>
-    <% , 0) %>
-
-    <% mid = median(heights) %>
-    <% heightLookup[mid].isNewColumn = true %>
-
-    <% for image, i in images: %>
+    <% for image, i in @getImages(): %>
 
       <div class="item"
         <a href="#">

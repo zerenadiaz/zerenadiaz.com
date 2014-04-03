@@ -10,6 +10,27 @@ module.exports = {
       title: "zerena",
       description: "a really awesome artist!",
     },
+    getImages: function () {
+
+      var _ = require('lodash');
+      var binarySearch = require('binarysearch');
+
+      var images = JSON.parse(this.feedr.feeds.flickr).photoset.photo;
+
+      var heights = [];
+
+      var totalHeight = _.reduce(images, function (heightSoFar, image) {
+        heights.push(heightSoFar);
+
+        return heightSoFar + parseInt(image.height_z);
+      }, 0);
+
+      var mid = binarySearch.closest(heights, totalHeight / 2);
+      console.log(mid, images[mid], images)
+      images[mid].isNewColumn = true;
+
+      return images;
+    },
   },
   detectEncoding: true,
   plugins: {
@@ -45,7 +66,7 @@ module.exports = {
     feedr: {
       feeds: {
         flickr: {
-          url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157643341085813&extras=description&api_key=16b3f66907471f8533cb6091e1b8817b&format=json&nojsoncallback=1",
+          url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157643341085813&extras=description,url_z&api_key=16b3f66907471f8533cb6091e1b8817b&format=json&nojsoncallback=1",
           clean: true
         },
       },
