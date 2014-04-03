@@ -3,25 +3,42 @@ layout: "default"
 title: "works"
 menuOrder: 1
 ---
-<main class="works column">
+<main class="works">
   <% images = JSON.parse(@feedr.feeds.flickr).photoset.photo %>
   
-  <% for image0, i in images: %>
-  <% break if (typeof images[i+1] == 'undefined') %>
-  <% image1 = images[i+1] %>
+  <div class="row">
+    <div class="item column">
 
-  <div class="item row">
-    <div class="item">
-      <a href="#">
-        <img src="http://farm<%= image0.farm %>.staticflickr.com/<%= image0.server %>/<%= image0.id %>_<%= image0.secret %>.jpg" />
-      </a>
+    <% _ = require('lodash') %>
+    <% median = require('median') %> 
+    <% heightLookup = {} %> %>
+    <% heights = [] %>
+    <% totalHeight = _.reduce(images, (totalHeight, image) -> %>
+    <%  heights.push(totalHeight) %>
+    <%  heightLookup[totalHeight] = image %>
+    <%  totalHeight += image.height_z %>
+    <% , 0) %>
+
+    <% mid = median(heights) %>
+    <% heightLookup[mid].isNewColumn = true %>
+
+    <% for image, i in images: %>
+
+      <div class="item"
+        <a href="#">
+          <img src="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>.jpg"/>
+        </a>
+      </div>
+
+    <% if (image.isNewColumn): %>
+
     </div>
-    <div class="item">
-      <a href="#">
-        <img src="http://farm<%= image1.farm %>.staticflickr.com/<%= image1.server %>/<%= image1.id %>_<%= image1.secret %>.jpg" />
-      </a>
+    <div class="item column">
+
+    <% end %>
+
+    <% end %>
+
     </div>
   </div>
-
-  <% end %>
 </main>

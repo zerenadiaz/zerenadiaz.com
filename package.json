@@ -15,7 +15,9 @@
   "dependencies": {
     "docpad": "~6.59.6",
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.1",
-    "longjohn": "~0.2.2"
+    "longjohn": "~0.2.2",
+    "clone": "~0.1.11",
+    "lodash": "~2.4.1"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
