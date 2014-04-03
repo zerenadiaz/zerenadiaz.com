@@ -26,7 +26,6 @@ module.exports = {
       }, 0);
 
       var mid = binarySearch.closest(heights, totalHeight / 2);
-      console.log(mid, images[mid], images)
       images[mid].isNewColumn = true;
 
       return images;
