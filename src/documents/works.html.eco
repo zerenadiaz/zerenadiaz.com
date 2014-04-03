@@ -1,6 +1,8 @@
 ---
 layout: "default"
 title: "works"
+menuColor: teal
+menuIcon: photo
 menuOrder: 0
 ---
 <main class="works">
