@@ -1,0 +1,27 @@
+---
+layout: "default"
+title: "works"
+menuOrder: 1
+---
+<main class="works column">
+  <% images = JSON.parse(@feedr.feeds.flickr).photoset.photo %>
+  
+  <% for image0, i in images: %>
+  <% break if (typeof images[i+1] == 'undefined') %>
+  <% image1 = images[i+1] %>
+
+  <div class="item row">
+    <div class="item">
+      <a href="#">
+        <img src="http://farm<%= image0.farm %>.staticflickr.com/<%= image0.server %>/<%= image0.id %>_<%= image0.secret %>.jpg" />
+      </a>
+    </div>
+    <div class="item">
+      <a href="#">
+        <img src="http://farm<%= image1.farm %>.staticflickr.com/<%= image1.server %>/<%= image1.id %>_<%= image1.secret %>.jpg" />
+      </a>
+    </div>
+  </div>
+
+  <% end %>
+</main>

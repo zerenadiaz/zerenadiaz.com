@@ -42,6 +42,14 @@ module.exports = {
         skipFiles: /^(scripts|styles)/,
       },
     },
+    feedr: {
+      feeds: {
+        flickr: {
+          url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157643341085813&extras=description&api_key=16b3f66907471f8533cb6091e1b8817b&format=json&nojsoncallback=1",
+          clean: true
+        },
+      },
+    },
   },
   environments: {
     development: {
