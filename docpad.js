@@ -22,14 +22,16 @@ module.exports = {
       var totalHeight = _.reduce(images, function (heightSoFar, image) {
         heights.push(heightSoFar);
 
+        var width = parseInt(image.width_o);
         var height = parseInt(image.height_o);
-        var scale = 1.0 / image.width_o;
+        var scale = 1.0 / width;
         var scaledHeight = scale * height;
 
         return heightSoFar + scaledHeight;
       }, 0);
 
-      var mid = binarySearch.closest(heights, totalHeight / 2);
+      var mid = binarySearch.closest(heights, totalHeight / 2) + 1;
+
       images[mid].isNewColumn = true;
 
       return images;
