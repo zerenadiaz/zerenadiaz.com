@@ -19,5 +19,6 @@ $(function() {
 });
 
 function resize () {
+  $("img.lazy").removeAttr("height");
   $("img.lazy").attr("width", window.innerWidth * 0.40);
 }
