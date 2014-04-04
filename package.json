@@ -35,6 +35,7 @@
     "docpad-plugin-menu": "~2.1.0",
     "docpad-plugin-feedr": "~2.7.0",
     "docpad-plugin-browserifybundles": "^2.0.0",
-    "modernizr": "git://github.com/Modernizr/Modernizr"
+    "modernizr": "git://github.com/Modernizr/Modernizr",
+    "uglifyify": "^2.1.1"
   }
 }
