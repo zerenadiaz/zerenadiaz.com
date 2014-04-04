@@ -1,1 +1,1 @@
-console.log("woo!");
+var Modernizr = require('./vendor/modernizr');

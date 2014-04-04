@@ -43,9 +43,21 @@ module.exports = {
         },
       },
     },
-    browserifybundler: {
-      inFiles: "/scripts/index.js",
-      outFile: "/scripts/bundle.js",
+    browserifybundles: {
+      bundles: [{
+        arguments: ['-g', 'uglifyify'],
+        entry: 'scripts/index.js',
+        out: 'scripts/bundle.js',
+      }],
+      environments: {
+        development: {
+          bundles: [{
+            arguments: ['-d'],
+            entry: 'scripts/index.js',
+            out: 'scripts/bundle.js',
+          }],
+        },
+      },
     },
     raw: {
       semantic: {

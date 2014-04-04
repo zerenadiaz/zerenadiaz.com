@@ -4,10 +4,12 @@
     <title><%= @site.title %> <%= @document.title || @site.description %></title>
     <link rel="shortcut icon" href="favicon.ico" />
     <meta charset="utf-8" />
+    <meta description="<% @site.description %>" />
     <%- @getBlock("meta").toHTML() %>
     <%- @getBlock("styles").add(@site.styles or []).add(@document.styles or []).toHTML() %>
   </head>
   <body>
+    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <%- @partial("header.html.hb") %>
     <%- @content %>
     <%- @getBlock("scripts").add(@site.scripts or []).add(@document.scripts or []).toHTML() %>

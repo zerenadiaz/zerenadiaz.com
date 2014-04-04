@@ -16,7 +16,6 @@
     "docpad": "~6.59.6",
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.1",
     "longjohn": "~0.2.2",
-    "clone": "~0.1.11",
     "lodash": "~2.4.1",
     "binarysearch": "^0.2.4"
   },
@@ -31,10 +30,11 @@
     "docpad-plugin-partials": "~2.8.1",
     "docpad-plugin-handlebars": "~2.3.0",
     "docpad-plugin-less": "~2.4.0",
-    "docpad-plugin-browserifybundler": "~2.0.3",
     "docpad-plugin-raw": "~2.2.3",
     "docpad-plugin-ghpages": "~2.4.2",
     "docpad-plugin-menu": "~2.1.0",
-    "docpad-plugin-feedr": "~2.7.0"
+    "docpad-plugin-feedr": "~2.7.0",
+    "docpad-plugin-browserifybundles": "^2.0.0",
+    "modernizr": "git://github.com/Modernizr/Modernizr"
   }
 }
