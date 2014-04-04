@@ -16,7 +16,7 @@ menuOrder: 0
         <a href="#">
 
           <noscript>
-            <img src="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>_z.jpg" width="<%= image.width_z %>" height="<%= image.height_z %>"
+            <img src="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>_z.jpg" width="<%= image.width_z %>" height="<%= image.height_z %>" />
           </noscript>
 
           <img
