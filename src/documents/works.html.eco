@@ -12,10 +12,22 @@ menuOrder: 0
 
     <% for image, i in @getImages(): %>
 
-      <div class="item"
+      <div class="item">
         <a href="#">
-          <img src="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>.jpg"/>
+
+          <noscript>
+            <img src="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>_z.jpg" width="<%= image.width_z %>" height="<%= image.height_z %>"
+          </noscript>
+
+          <img
+            class="lazy"
+            src="/images/transparent.gif"
+            data-pattern="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>{{size}}.jpg"
+            data-widths='[{"size":100,"slug":"_t"},{"size":240,"slug":"_m"},{"size":320,"slug":"_n"},{"size":500,"slug":""},{"size":640,"slug":"_z"},{"size":800,"slug":"_c"},{"size":1024,"slug":"_b"}]'
+            width="<%= image.width_z %>"
+          />
         </a>
+        
       </div>
 
     <% if (image.isNewColumn): %>
