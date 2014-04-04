@@ -22,7 +22,11 @@ module.exports = {
       var totalHeight = _.reduce(images, function (heightSoFar, image) {
         heights.push(heightSoFar);
 
-        return heightSoFar + parseInt(image.height_z);
+        var height = parseInt(image.height_o);
+        var scale = 1.0 / image.width_o;
+        var scaledHeight = scale * height;
+
+        return heightSoFar + scaledHeight;
       }, 0);
 
       var mid = binarySearch.closest(heights, totalHeight / 2);
@@ -77,7 +81,7 @@ module.exports = {
     feedr: {
       feeds: {
         flickr: {
-          url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157643341085813&extras=description,url_z&api_key=16b3f66907471f8533cb6091e1b8817b&format=json&nojsoncallback=1",
+          url: "http://api.flickr.com/services/rest/?method=flickr.photosets.getPhotos&photoset_id=72157643341085813&extras=description,url_z,url_o&api_key=16b3f66907471f8533cb6091e1b8817b&format=json&nojsoncallback=1",
           clean: true
         },
       },

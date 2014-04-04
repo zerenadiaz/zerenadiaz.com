@@ -12,6 +12,10 @@ $(function() {
   }, function () {
     this.style.opacity = 1;
   });
+
+  // load the first few images in each column
+  $(".left.column img.lazy").slice(0,2).trigger("laziestloader");
+  $(".right.column img.lazy").slice(0,2).trigger("laziestloader");
 });
 
 function resize () {

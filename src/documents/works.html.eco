@@ -8,7 +8,7 @@ menuOrder: 0
 <main class="works">
   
   <div class="row">
-    <div class="item column">
+    <div class="item left column">
 
     <% for image, i in @getImages(): %>
 
@@ -33,7 +33,7 @@ menuOrder: 0
     <% if (image.isNewColumn): %>
 
     </div>
-    <div class="item column">
+    <div class="item right column">
 
     <% end %>
 
