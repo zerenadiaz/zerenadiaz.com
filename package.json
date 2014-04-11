@@ -1,17 +1,17 @@
 {
-  "name": "artshow",
+  "name": "zerenadiaz.com",
   "version": "0.1.0",
-  "description": "artshow website",
+  "description": "zerenadiaz.com website",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ahdinosaur/artshow.git"
+    "url": "git://github.com/zerenadiaz/zerenadiaz.com.git"
   },
   "author": "ahdinosaur",
   "license": "AGPLv3",
   "bugs": {
-    "url": "https://github.com/ahdinosaur/artshow/issues"
+    "url": "https://github.com/zerenadiaz/zerenadiaz.com/issues"
   },
-  "homepage": "http://artshow",
+  "homepage": "http://zerenadiaz.com",
   "dependencies": {
     "docpad": "~6.59.6",
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.1",
@@ -26,7 +26,7 @@
   "scripts": {
     "start": "node .",
     "develop": "docpad run",
-    "deploy": "git remote add deploy git@github.com:ahdinosaur/artshow.git; docpad deploy-ghpages --env static"
+    "deploy": "git remote add deploy git@github.com:zerenadiaz/zerenadiaz.github.io.git; docpad deploy-ghpages --env static"
   },
   "devDependencies": {
     "docpad-plugin-eco": "~2.0.3",

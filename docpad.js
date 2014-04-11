@@ -62,8 +62,8 @@ module.exports = {
       },
     },
     ghpages: {
-      deployRemote: 'origin',
-      deployBranch: 'gh-pages',
+      deployRemote: 'deploy',
+      deployBranch: 'master',
     },
     menu: {
       menuOptions: {
