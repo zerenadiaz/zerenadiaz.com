@@ -25,7 +25,7 @@
   "scripts": {
     "start": "node .",
     "develop": "docpad run",
-    "deploy": "git remote add deploy git@github.com:zerenadiaz/zerenadiaz.github.io.git; docpad deploy-ghpages --env static"
+    "deploy": "git remote add deploy git@github.com:ahdinosaur/artshow.git; docpad deploy-ghpages --env static"
   },
   "devDependencies": {
     "docpad-plugin-eco": "~2.0.3",
