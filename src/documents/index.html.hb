@@ -1,9 +1,9 @@
 ---
-layout: "landing"
+layout: "minimal"
 menuHidden: true
 ---
-<main>
+<main class="home page">
 wafflecake!
 
-click <a href="/works.html">here</a> to continue.
+click <a href="/images.html">here</a> to continue.
 </main>

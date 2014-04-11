@@ -1,13 +1,13 @@
-# zerenadiaz.com
+# artshow
 
-website for [zerena](http://zerenadiaz.com) built using [DocPad](http://docpad.org).
+website for [artshow](http://artshow) built using [DocPad](http://docpad.org).
 
 ## how to
 
 ### install
 
 ```
-git clone https://github.com/zerenadiaz/zerenadiaz.com
+git clone https://github.com/ahdinosaur/artshow
 npm install
 ```
 
@@ -25,4 +25,6 @@ npm install
 
 ## license
 
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+code licensed under <a ref="license" href="http://www.gnu.org/licenses/agpl-3.0.html">AGPLv3</a>
+
+content licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US">CC-BY-SA 4.0</a>.<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/deed.en_US"><img alt="CC-BY-SA 4.0 icon" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a>

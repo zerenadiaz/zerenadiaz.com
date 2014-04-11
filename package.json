@@ -1,17 +1,17 @@
 {
-  "name": "zerenadiaz.com",
+  "name": "artshow",
   "version": "0.1.0",
-  "description": "zerenadiaz.com website",
+  "description": "artshow website",
   "repository": {
     "type": "git",
-    "url": "git://github.com/zerenadiaz/zerenadiaz.com.git"
+    "url": "git://github.com/ahdinosaur/artshow.git"
   },
   "author": "ahdinosaur",
   "license": "AGPLv3",
   "bugs": {
-    "url": "https://github.com/zerenadiaz/zerenadiaz.com/issues"
+    "url": "https://github.com/ahdinosaur/artshow/issues"
   },
-  "homepage": "http://zerenadiaz.com",
+  "homepage": "http://artshow",
   "dependencies": {
     "docpad": "~6.59.6",
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.1",

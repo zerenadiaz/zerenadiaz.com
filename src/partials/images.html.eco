@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="item left column">
+
+  <% for image, i in @getImages(): %>
+
+    <div class="item">
+      <a href="#">
+
+        <noscript>
+          <img src="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>_z.jpg" width="<%= image.width_z %>" height="<%= image.height_z %>" />
+        </noscript>
+
+        <img
+          class="lazy"
+          src="images/transparent.gif"
+          data-pattern="http://farm<%= image.farm %>.staticflickr.com/<%= image.server %>/<%= image.id %>_<%= image.secret %>{{size}}.jpg"
+          data-widths='[{"size":100,"slug":"_t"},{"size":240,"slug":"_m"},{"size":320,"slug":"_n"},{"size":500,"slug":""},{"size":640,"slug":"_z"},{"size":800,"slug":"_c"},{"size":1024,"slug":"_b"}]'
+          height="<%= image.height_o %>"
+          width="<%= image.width_o %>"
+        />
+      </a>
+      
+    </div>
+
+  <% if (image.isNewColumn): %>
+
+  </div>
+  <div class="item right column">
+
+  <% end %>
+
+  <% end %>
+
+  </div>
+</div>

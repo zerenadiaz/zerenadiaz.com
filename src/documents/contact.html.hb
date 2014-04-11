@@ -5,4 +5,6 @@ menuColor: purple
 menuIcon: comment outline
 menuOrder: 1
 ---
-contact!
+<main class="ui contact page grid">
+  contact!
+</main>
