@@ -1,10 +1,10 @@
 ---
 layout: "default"
-title: "images"
+title: "art"
 menuColor: teal
 menuIcon: photo
 menuOrder: 0
 ---
-<main class="images page">
+<main class="show page">
   {{partial "images.html.eco" }}
 </main>

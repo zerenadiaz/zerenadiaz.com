@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
   <head>
     <title><%= @site.title %> <%= @document.title || @site.description %></title>
     <link rel="shortcut icon" href="favicon.ico" />
@@ -9,7 +9,7 @@
     <%- @getBlock("styles").add(@site.styles or []).add(@document.styles or []).toHTML() %>
   </head>
   <body>
-    <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" target="_blank">upgrade your browser</a> to improve your experience.</p>
+    <!--[if lt IE 9]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <noscript class="noscript">For full functionality of this page it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a></noscript>
     <%- @partial("header.html.hb") %>
     <%- @content %>

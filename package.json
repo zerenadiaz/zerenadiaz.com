@@ -17,9 +17,9 @@
     "semantic": "git+https://github.com/Semantic-Org/Semantic-UI#0.12.1",
     "longjohn": "~0.2.2",
     "lodash": "~2.4.1",
-    "binarysearch": "^0.2.4",
     "jquery": "~2.1.0",
-    "laziestloader": "~0.1.1"
+    "laziestloader": "~0.1.1",
+    "salvattore": "git://github.com/ahdinosaur/salvattore"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
@@ -37,7 +37,6 @@
     "docpad-plugin-menu": "~2.1.0",
     "docpad-plugin-feedr": "~2.7.0",
     "docpad-plugin-browserifybundles": "^2.0.0",
-    "modernizr": "git://github.com/Modernizr/Modernizr",
     "uglifyify": "^2.1.1"
   }
 }

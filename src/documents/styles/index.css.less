@@ -2,9 +2,6 @@
 @import '../../../node_modules/semantic/src/collections/grid.less';
 @import '../../../node_modules/semantic/src/collections/menu.less';
 
-@import './modernizr.less';
-@import './flex.less';
-
 html, body {
   margin: 0;
   padding: 0;
@@ -25,9 +22,18 @@ body nav {
   
 }
 
-body > main.images {
-  .column > .item {
-    margin-bottom: 100px;
+body > main.show.page {
+  
+  .images[data-columns]::before {
+    content: '2 .eight.wide.column';
+  }
+
+  .column {
+    text-align: center;
+
+    > .item {
+      margin-bottom: 100px;
+    }
   }
 }
 
