@@ -11,6 +11,7 @@ module.exports = {
       scripts: ["scripts/bundle.js"],
       title: config.title,
       description: config.description,
+      sizes: config.sizes,
     },
     getImages: function () {
 
