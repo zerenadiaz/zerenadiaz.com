@@ -37,6 +37,10 @@ module.exports = {
         arguments: ['-g', 'uglifyify'],
         entry: 'scripts/index.js',
         out: 'scripts/bundle.js',
+      }, {
+        arguments: ['-g', 'uglifyify'],
+        entry: 'scripts/landing.js',
+        out: 'scripts/bundle-landing.js',
       }],
       environments: {
         development: {
@@ -44,6 +48,10 @@ module.exports = {
             arguments: ['-d'],
             entry: 'scripts/index.js',
             out: 'scripts/bundle.js',
+          }, {
+            arguments: ['-d'],
+            entry: 'scripts/landing.js',
+            out: 'scripts/bundle-landing.js',
           }],
         },
       },

@@ -9,5 +9,6 @@
   </head>
   <body>
     <%- @content %>
+    <%- @getBlock("scripts").add(@document.scripts or []).toHTML() %>
   </body>
 </html>

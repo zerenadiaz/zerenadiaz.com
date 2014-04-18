@@ -19,7 +19,8 @@
     "lodash": "~2.4.1",
     "jquery": "~2.1.0",
     "laziestloader": "~0.1.1",
-    "salvattore": "git://github.com/ahdinosaur/salvattore"
+    "salvattore": "git://github.com/ahdinosaur/salvattore",
+    "d3": "~3.4.6"
   },
   "main": "node_modules/.bin/docpad-server",
   "scripts": {
